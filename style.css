@@ -4,8 +4,8 @@
   --text-gray: hsl(237, 12%, 33%);
   --text-light-gray: hsl(240, 6%, 50%);
   --dividers: hsl(240, 5%, 91%);
-  --gradient-one: hsl(273, 75%, 66%);
-  --gradient-two: hsl(240, 73%, 65%);
+  --gradient-one: #af67e9;
+  --gradient-two: #6565e7;
 }
 
 * {
@@ -20,6 +20,15 @@ html {
 }
 
 body {
+  height: 100vh;
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 35%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
   font-size: 1.2rem;
 }
 
