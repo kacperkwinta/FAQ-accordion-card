@@ -30,58 +30,76 @@ body {
   background-repeat: no-repeat no-repeat;
   background-size: cover;
   font-size: 1.2rem;
-}
-
-.accordion-card {
-  margin: 10rem auto;
-  width: 100rem;
-  height: 50rem;
-  background-color: #fff;
-  border-radius: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+section {
+  margin-bottom: 1.2rem;
+}
+
+.faq-text {
+  background-color: #fff;
+  padding: 4.8rem;
+  width: 40rem;
+  border-radius: 10px;
+}
+
+.faq-heading {
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.faq-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 4.8rem;
+  transition: all 0.2s ease;
 }
 
-.accordion-img {
-  position: relative;
-  overflow: hidden;
-  background-image: url(images/bg-pattern-desktop.svg);
-  background-repeat: no-repeat no-repeat;
-  background-size: cover;
+.faq-item:hover {
+  cursor: pointer;
+  color: var(--text-red);
 }
 
-.img-box {
-  z-index: 1100;
-  position: absolute;
-  top: 63%;
-  left: 18%;
-  transform: translate(-50%, -50%);
+.faq-arrow {
+  transition: all 0.1s ease;
 }
 
-.img-woman {
-  z-index: 90;
+.faq-arrow-flip {
+  transform: rotate(180deg);
 }
 
-.accordion-text {
+.faq-answer {
+  margin-top: 2.4rem;
+  color: var(--text-gray);
 }
 
-details {
-  margin: 1.5rem 0;
+.divider {
+  border: 1px solid hsl(240, 5%, 91%);
+  margin: 2.4rem 0;
 }
 
-details p {
-  margin-top: 1.2rem;
+/* bold text after click on question */
+.fw-700 {
+  font-weight: 700;
+}
+
+/* hide answers */
+.hidden {
+  display: none;
 }
 
 /* Footer */
 .attribution {
-  font-size: 11px;
+  font-size: 1.2rem;
+  color: white;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--text-red);
 }
